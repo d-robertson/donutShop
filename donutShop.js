@@ -24,7 +24,7 @@ DonutShop.prototype.createTable = function() {
   var times = document.getElementById('times');
   var location = document.getElementById('location');
   var timeOfDay = document.getElementsByClassName('timeofday').length;
-  var dailyTotal = document.getElementById('dailytotal'); 
+  var dailyTotal = document.getElementById('dailytotal');
   var tableRow = document.createElement('tr');
   var rowHead = document.createElement('th');
   rowHead.className = 'storeLocation';
@@ -38,7 +38,7 @@ DonutShop.prototype.createTable = function() {
     tableRow.appendChild(hourlyCell);
   }
   var totalDailyDonuts = document.createElement('td');
-  totalDailyDonuts.idName = 'totalDailyDonuts'
+  totalDailyDonuts.id = 'totalDailyDonuts'
   totalDailyDonuts.innerHTML = this.dailyAvg();
   tableRow.appendChild(totalDailyDonuts);
   donutShops.appendChild(tableRow);

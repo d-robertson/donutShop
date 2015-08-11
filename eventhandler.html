@@ -1,0 +1,90 @@
+<table border=2>
+    <tr>
+        <td colspan=4>
+            <input type="text" id="result">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" value ="1" onclick="document.calc.result.value+='1'"></td>
+        <td><input type="button" value ="2" onclick="document.calc.result.value+='2'"></td>
+        <td><input type="button" value ="+" onclick="document.calc.result.value+='+'"></td>
+        <input type="button" value ="=" onclick="document.calc.result.value = eval(document.calc.result.value)"></td>
+    </tr>
+</table>
+
+
+
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<canvas id="c1" width="400" height="300" style="boreder: solid 5px red"></canvas>
+<input type="button" value="Draw Text" onclick="drawText()">
+<input>
+<script type="text/javascript">
+    var c = document.getElementById("c1");
+    var ctx = c.getContext('2d');
+
+    ctx.fillStyle = "red";
+    var x = 50; var y = 50;
+    var width = 20; var height = 40;
+
+    document.onkeypress = function(event) {
+        ctx.fillRect(x, y, width, height);
+    }
+    function drawText() {
+        ctx.font = "30px arial";
+        ctx.fillText("Hello Friend", 10, 50);
+    }
+</script>
+
+
+
+
+<form method="post" id="myform" action="first.html" onsubmit="">
+  <input type="text" id="t1">
+  <input type="submit" value="submit data">
+</form>
+<script type="text/javascript">
+function check(){
+    var name = document.getElementById("t1");
+    if (name.length < 1) {
+        alert("name field is empty");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+</script>
+
+
+
+
+
+
+
+  <input type="buttom" value="click me" onclick="changeBG()">
+
+  <script type="text/javascript">
+    function changeBG() {
+        document.body.style.backgroundColor = "green";
+    }
+
+
+  </script>
+
