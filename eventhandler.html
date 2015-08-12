@@ -55,9 +55,17 @@
 
 
 
-<form method="post" id="myform" action="first.html" onsubmit="">
-  <input type="text" id="t1">
-  <input type="submit" value="submit data">
+<form id="shopSubmit" onsubmit="">
+    <label for="shopLocation">Location</label>
+    <input name="shopLocation" type="text">
+    <label for="minCust">Min. Customers</label>
+    <input name="minCust" type="text">
+    <label for="maxCust">Max. Customers</label>
+    <input name="maxCust" type="text">
+    <label for="avgDonuts">Avg. Donuts per Customer</label>
+    <input name="avgDonuts" type="text">
+
+    <buttom id="buttonSubmit" type="submit">Add Donut Shop</button>
 </form>
 <script type="text/javascript">
 function check(){
@@ -78,7 +86,7 @@ function check(){
 
 
 
-  <input type="buttom" value="click me" onclick="changeBG()">
+  <input type="button" value="click me" onclick="changeBG()">
 
   <script type="text/javascript">
     function changeBG() {
