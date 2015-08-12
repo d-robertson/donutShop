@@ -1,0 +1,10 @@
+body {
+  background-image: url("space-background.jpg");
+  background-size: cover;
+  color: yellow;
+}
+
+#donutshops {
+  border-collapse: collapse;
+  padding: .5em;
+}
