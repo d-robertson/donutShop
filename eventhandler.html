@@ -1,0 +1,98 @@
+<table border=2>
+    <tr>
+        <td colspan=4>
+            <input type="text" id="result">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" value ="1" onclick="document.calc.result.value+='1'"></td>
+        <td><input type="button" value ="2" onclick="document.calc.result.value+='2'"></td>
+        <td><input type="button" value ="+" onclick="document.calc.result.value+='+'"></td>
+        <input type="button" value ="=" onclick="document.calc.result.value = eval(document.calc.result.value)"></td>
+    </tr>
+</table>
+
+
+
+
+
+
+<script type="text/javascript">
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<canvas id="c1" width="400" height="300" style="boreder: solid 5px red"></canvas>
+<input type="button" value="Draw Text" onclick="drawText()">
+<input>
+<script type="text/javascript">
+    var c = document.getElementById("c1");
+    var ctx = c.getContext('2d');
+
+    ctx.fillStyle = "red";
+    var x = 50; var y = 50;
+    var width = 20; var height = 40;
+
+    document.onkeypress = function(event) {
+        ctx.fillRect(x, y, width, height);
+    }
+    function drawText() {
+        ctx.font = "30px arial";
+        ctx.fillText("Hello Friend", 10, 50);
+    }
+</script>
+
+
+
+
+<form id="shopSubmit" onsubmit="">
+    <label for="shopLocation">Location</label>
+    <input name="shopLocation" type="text">
+    <label for="minCust">Min. Customers</label>
+    <input name="minCust" type="text">
+    <label for="maxCust">Max. Customers</label>
+    <input name="maxCust" type="text">
+    <label for="avgDonuts">Avg. Donuts per Customer</label>
+    <input name="avgDonuts" type="text">
+
+    <buttom id="buttonSubmit" type="submit">Add Donut Shop</button>
+</form>
+<script type="text/javascript">
+function check(){
+    var name = document.getElementById("t1");
+    if (name.length < 1) {
+        alert("name field is empty");
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+</script>
+
+
+
+
+
+
+
+  <input type="button" value="click me" onclick="changeBG()">
+
+  <script type="text/javascript">
+    function changeBG() {
+        document.body.style.backgroundColor = "green";
+    }
+
+
+  </script>
+
