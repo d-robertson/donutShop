@@ -1,10 +1,54 @@
 body {
   background-image: url("space-background.jpg");
-  background-size: cover;
-  color: yellow;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  height: 6000px;
+  color: #FFD06B;
+}
+
+h1 {
+	font-family: 'Orbitron', sans-serif;
+}
+
+#times {
+	color: #63AEC7;
 }
 
 #donutshops {
+  border: #F2AC16;
+  background-color: black;
   border-collapse: collapse;
   padding: .5em;
+  position: absolute;
+  bottom: -5127px;
+  right: 255px;
+  color: #F2AC16;
+  width: 51%;
 }
+/*
+#shopLocation {
+	position: absolute;
+	bottom: -4991px;
+	right: 764;
+}*/
+
+#blackbox {
+	width: 313px;
+	height: 382px;
+	background-color: black;
+	position: absolute;
+	bottom: -4982px;
+	right: 762px;
+}
+
+#shopSubmit {
+	position: absolute;
+}
+
+#consoleScreen {
+	position: absolute;
+	bottom: -5000px;
+}
+
