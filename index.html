@@ -2,11 +2,17 @@
   <html>
     <head>
         <link href="style.css" type="text/css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
       <title>DonutShop</title>
     </head>
     <body>
     	<h1>Deep Space Donuts</h1>
     	<p>I made a constructor that can take certain info about your donut shops and put it in this nifty table.</p>
+
+        <img id="spaceShip" src="ClassicEnterprise.png" />
+        <img id="consoleScreen" src="STscreen.jpg" />
+
+
     	<table id="donutshops" border=3px>
     		<tr id="times">
     			<th id= "location">location</th>
@@ -25,6 +31,7 @@
     			<th id="dailytotal">Daily Total</th>
     		</tr>
 		</table>
+    <div id="blackbox">
         <form id="shopSubmit" onsubmit="">
             <label for="shopLocation">Location</label>
             <input id ="shopLocation" name="shopLocation" type="text">
@@ -37,8 +44,8 @@
 
             <button id="buttonSubmit" type="submit">Add Donut Shop</button>
         </form>
-
-
+     </div>
+       
 
       <script src="donutShop.js"></script>
     </body>
