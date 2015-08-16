@@ -6,46 +6,88 @@
       <title>DonutShop</title>
     </head>
     <body>
-    	<h1>Deep Space Donuts</h1>
-    	<p>I made a constructor that can take certain info about your donut shops and put it in this nifty table.</p>
+      <div id="tophalf">
+        <h1 id="firsth1">FRESH</h1>
+        <h1 id="secondh1">BAKED</h1>
+        <h1 id="thirdh1">INNOVAT<span>ION</span></h1>
+        <div id="divider"></div>
+        <div id="h5headers">
+          <h5 id="firsth5">A Simple Table Builder</h5>
+          <h5 id="secondh5">Designed To Make Your Life Easier</h5>
+          <h5 id="thirdh5"><span>IMAGINE</span></h5>
+        </div>
 
-        <img id="spaceShip" src="ClassicEnterprise.png" />
-        <img id="consoleScreen" src="STscreen.jpg" />
+      </div>
+      <div id="bottomhalf">
+        <div id="bottomquarter1">
+          <div id="paragraph1">
+          	<p id ="donutipsum">Gummies brownie topping cheesecake macaroon croissant jujubes. Gummi bears candy donut bonbon. Toffee candy jelly beans carrot cake. Liquorice cookie toffee macaroon oat cake marshmallow. Pudding dessert lollipop fruitcake powder marshmallow pudding. Halvah jelly jelly bear claw sesame snaps toffee.
 
-
-    	<table id="donutshops" border=3px>
-    		<tr id="times">
-    			<th id= "location">location</th>
-    			<th class="timeofday">7am</th>
-    			<th class="timeofday">8am</th>
-    			<th class="timeofday">9am</th>
-    			<th class="timeofday">10am</th>
-    			<th class="timeofday">11am</th>
-    			<th class="timeofday">12pm</th>
-    			<th class="timeofday">1pm</th>
-    			<th class="timeofday">2pm</th>
-    			<th class="timeofday">3pm</th>
-    			<th class="timeofday">4pm</th>
-    			<th class="timeofday">5pm</th>
-    			<th class="timeofday">6pm</th>
-    			<th id="dailytotal">Daily Total</th>
-    		</tr>
-		</table>
-    <div id="blackbox">
-        <form id="shopSubmit" onsubmit="">
-            <label for="shopLocation">Location</label>
-            <input id ="shopLocation" name="shopLocation" type="text">
-            <label for="minCust">Min. Customers</label>
-            <input id="minCust" name="minCust" type="text">
-            <label for="maxCust">Max. Customers</label>
-            <input id="maxCust" name="maxCust" type="text">
-            <label for="avgDonuts">Avg. Donuts per Customer</label>
-            <input id="avgDonuts" name="avgDonuts" type="text">
-
+            </p>
+          </div>
+          <div id="bottomtitle">
+            <h1 id="fourthh1">Daily</h1>
+            <h1 id="fifthh1">Donut</h1>
+            <h1 id="sixthh1">Design</h1>
+          </div>
+        </div>
+        <div id="bottomquarter2">
+          <div id="formbox">
+            <form id="shopSubmit" onsubmit="">
+              <div id ="locationlabel">
+                <label for="shopLocation">Location</label>
+              </div>
+              <div id="slinput">
+                <input id="shopLocation" name="shopLocation" type="text">
+              </div>
+              <div id="minCustlabel">
+                <label for="minCust">Min. Customers</label>
+              </div>
+              <div id="mininput">
+                <input id="minCust" name="minCust" type="text">
+              </div>
+              <div id="maxCustlabel">
+                <label for="maxCust">Max. Customers</label>
+              </div>
+              <div id="maxinput">
+                <input id="maxCust" name="maxCust" type="text">
+              </div>
+              <div id="avgDonutslabel">
+                <label for="avgDonuts">Avg. Donuts per Customer</label>
+              </div>
+              <div id="adinput">
+                <input id="avgDonuts" name="avgDonuts" type="text">
+              </div>
+            </form>
             <button id="buttonSubmit" type="submit">Add Donut Shop</button>
-        </form>
+            <div id="formBG"></div>
+          </div>
+
+          <div id="table">
+          	<table id="donutshops" border=3px>
+          		<tr id="times">
+          			<th id= "location">Location</th>
+          			<th class="timeofday">7am</th>
+          			<th class="timeofday">8am</th>
+            		<th class="timeofday">9am</th>
+          			<th class="timeofday">10am</th>
+          			<th class="timeofday">11am</th>
+          			<th class="timeofday">12pm</th>
+          			<th class="timeofday">1pm</th>
+          			<th class="timeofday">2pm</th>
+          			<th class="timeofday">3pm</th>
+          			<th class="timeofday">4pm</th>
+          			<th class="timeofday">5pm</th>
+          			<th class="timeofday">6pm</th>
+          			<th id="dailytotal">Daily Total</th>
+          		</tr>
+      		  </table>
+          </div>
+          <div id="BGhighlight"></div>
+        </div>
      </div>
-       
+
+
 
       <script src="donutShop.js"></script>
     </body>
