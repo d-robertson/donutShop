@@ -72,8 +72,34 @@ function buttonSubmit() {
   var max = document.getElementById('maxCust');
   var avg = document.getElementById('avgDonuts');
 
-  var newDonutShop = new DonutShop(loc.value, parseInt(min.value), parseInt(max.value), parseInt(avg.value), storeArray);
-  newDonutShop.createTable();
+  if(checkDuplicates(loc.value)) {
+    updateStore(loc.value, parseInt(min.value), parseInt(max.value), parseInt(avg.value));
+  }
+  else {
+    var newDonutShop = new DonutShop(loc.value, parseInt(min.value), parseInt(max.value), parseInt(avg.value), storeArray);
+    newDonutShop.createTable();
+  }
+
+}
+
+function checkDuplicates(newLocationName) {
+  for(var i = 0; i < storeArray.length; i++) {
+    var locationName = storeArray[i].locationName;
+    if(locationName === newLocationName) {
+      return {
+        storeObj: storeArray[i],
+        index: i,
+        location: locationName
+      }
+    }
+    else {
+      return false;
+    }
+  }
+}
+
+function updateStore(newLocationName, newMin, newMax, newAvg) {
+  for(var i = 0; )
 }
 
 
